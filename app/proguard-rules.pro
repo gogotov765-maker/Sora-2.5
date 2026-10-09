@@ -1,2 +1,0 @@
--keep class com.sora25.app2.data.** { *; }
--dontwarn org.slf4j.**
