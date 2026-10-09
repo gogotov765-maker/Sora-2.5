@@ -1,0 +1,17 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /videos/{id} {
+      // Читать можно опубликованные видео и свои собственные
+      allow read: if resource.data.published == true
+                  || (request.auth != null && resource.data.uid == request.auth.uid);
+      // Владелец может менять ТОЛЬКО флаг published (публикация / снятие)
+      allow update: if request.auth != null
+                    && resource.data.uid == request.auth.uid
+                    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['published']);
+      allow delete: if request.auth != null && resource.data.uid == request.auth.uid;
+      // Создаёт документы только сервер (Admin SDK обходит правила)
+      allow create: if false;
+    }
+  }
+}
