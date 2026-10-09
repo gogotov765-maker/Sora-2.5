@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1019076378142",
+    "project_id": "com-sora-2-5-app",
+    "storage_bucket": "com-sora-2-5-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019076378142:android:3590c0a9cd2b797db3380f",
+        "android_client_info": {
+          "package_name": "com.sora25.app2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019076378142-pn7n4lui3g6ac554q1ojuip8s322q8a8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sora25.app2",
+            "certificate_hash": "0fb600b5820b290e69b2e0dd9b8494a596e7d355"
+          }
+        },
+        {
+          "client_id": "1019076378142-glg7uo9r7qc4ntup3897ohgi88lbrhk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu698vbdZQfiIfAF7TLKHI4v0vLjuI5lQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019076378142-glg7uo9r7qc4ntup3897ohgi88lbrhk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
